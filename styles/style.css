@@ -6,3 +6,163 @@ Green: #00B172
 White: #FFF
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800&display=swap');
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+/*This is the header: should be in a position:fixed and arrange the layout with flex or float.*/
+
+.header {
+    background-color: #fff;
+    width: 1625px;
+    height: 70px;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 210px;
+    height: 60px;
+}
+
+.header nav ul li {
+    list-style-type: none;
+    font-weight: 500;
+    display: inline;
+    padding: 10px;
+}
+
+/*This is the Banner*/
+
+.background {
+    background-image: url(/images/landing.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    width: 1665px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background h1 {
+    font-size: 70px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.background p {
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+/*This section is "What's on Spotify". Use divs */
+
+.info {
+    background-color: #fff;
+    width: 1625px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.info h2 {
+    color: #1a1a1a;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline #00B172;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.info div {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info div article {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info div article img {
+    width: 110px;
+}
+
+.info div article h4 {
+    padding: 15px;
+    color: #00B172;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info div article p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* This is the section for the App*/
+
+.app {
+    background-color: #00B172;
+    background-image: url(/images/download.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    color: #fff;
+    height: 700px;
+    margin: 30px;
+    padding: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app h2 {
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: underline #fff;
+    padding-bottom: 20px;
+}
+
+.app h4 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 40px 0px;
+}
+
+.app p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.app div img {
+    width: 360px;
+}
